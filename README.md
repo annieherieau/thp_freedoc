@@ -12,7 +12,7 @@ CLone repository or launch in codespace.
 
 Install dépendencies
 ```bash
-  $ bundle Install
+  $ bundle install
 ```
 Install Database : create tables and seed
 ```bash
