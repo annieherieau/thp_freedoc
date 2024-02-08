@@ -1,24 +1,33 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# FreeDoc
 
-Things you may want to cover:
+Concurrent de Doctolib pour gérer les bases de données avec Rails. Projet validant du 08/02/2024
+- gérer la base de données et les migrations
+- gérer les relations entre les tables et les modèles
+- faire un seed
 
-* Ruby version
+## Installation
 
-* System dependencies
+CLone repository or launch in codespace.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Install dépendencies
+```bash
+  $ bundle Install
+```
+Install Database : create tables and seed
+```bash
+  $ rails db:migrate
+  $ rails db:seed
+```
+To launch Rails console
+```bash
+  $ rails c
+```
+Print tables in Rails console
+```bash
+  > tp City.all
+  > tp Speciality.all
+  > tp Patient.all
+  > tp Doctor.all
+  > tp Appointement.all
+```
